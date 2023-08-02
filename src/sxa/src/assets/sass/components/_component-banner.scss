@@ -1,0 +1,40 @@
+@import "@sass/abstracts/vars";
+@import "@sass/abstracts/mixins";
+
+.banner {
+    width: 33%;
+    padding: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    >.component-content {
+        position: relative;
+        @include clearfix();
+
+        >div {
+            padding: 5px;
+        }
+    }
+    .zg-height-fix {
+        .field-promoicon {
+            margin-top: 100px;
+        }
+    }
+    .field-bannericon {
+        overflow: hidden;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .field-bannerlink {
+        margin-top: 5px;
+        padding-bottom: 10px;
+    }
+    &.image-full-size {
+        img {
+            margin-bottom: 10px;
+        }
+    }
+    @import "@sass/variants/banner";
+}
