@@ -1,0 +1,18 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "CustomYourSite",
+    "items": {
+        "includes": [
+            {
+			  "name": "customLayout",
+			  "path": "/sitecore/layout/Renderings/Feature/JSS Experience Accelerator/Page Content",
+			  "allowedPushOperations": "CreateUpdateAndDelete"
+			},
+			{
+			  "name": "customTemplates",
+			  "path": "/sitecore/templates/Feature/JSS Experience Accelerator/Page Content",
+			  "allowedPushOperations": "CreateUpdateAndDelete"
+			}
+        ]
+    }
+}
