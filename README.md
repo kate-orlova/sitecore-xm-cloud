@@ -13,6 +13,10 @@ This component library helps to accelerate your XM Cloud development.
 ### Banner
 `..\src\sxa\src\components\Banner.tsx` implements a Banner JavaScript component.
 
+## Next.js
+### Language Selector
+`..\src\nextjs\src\components\LanguageSelector.tsx` implements a Language Selector Next.js component.
+
 TBC
 
 # License
