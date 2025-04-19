@@ -1,6 +1,14 @@
+[![GitHub license](https://img.shields.io/github/license/kate-orlova/sitecore-xm-cloud.svg)](https://github.com/kate-orlova/sitecore-xm-cloud/blob/master/LICENSE)
+![GitHub language count](https://img.shields.io/github/languages/count/kate-orlova/sitecore-xm-cloud.svg?style=flat)
+![GitHub top language](https://img.shields.io/github/languages/top/kate-orlova/sitecore-xm-cloud.svg?style=flat)
+![GitHub repo size](https://img.shields.io/github/repo-size/kate-orlova/sitecore-xm-cloud.svg?style=flat)
+![GitHub contributors](https://img.shields.io/github/contributors/kate-orlova/sitecore-xm-cloud)
+
 # Sitecore XM Cloud
 
 # Components
+This component library helps to accelerate your XM Cloud development.
+
 ## Headless SXA
 ### Banner
 `..\src\sxa\src\components\Banner.tsx` implements a Banner JavaScript component.
