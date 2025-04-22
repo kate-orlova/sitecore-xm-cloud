@@ -5,11 +5,13 @@ import Bootstrap from 'src/Bootstrap';
 
 import 'assets/main.scss';
 
-function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
+import { SessionProvider } from 'next-auth/react';
+
+function App({ Component, pageProps: { session, ...pageProps } }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;
 
   return (
-    <>
+    <SessionProvider session={session}>
       <Bootstrap {...pageProps} />
       {/*
         // Use the next-localization (w/ rosetta) library to provide our translation dictionary to the app.
@@ -19,7 +21,7 @@ function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element
       <I18nProvider lngDict={dictionary} locale={pageProps.locale}>
         <Component {...rest} />
       </I18nProvider>
-    </>
+    </SessionProvider>
   );
 }
 
