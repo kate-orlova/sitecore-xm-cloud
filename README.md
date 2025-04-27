@@ -20,5 +20,11 @@ This component library helps to accelerate your XM Cloud development.
 ### Gated Content
 `..\src\nextjs\src\components\GatedContentWrapper.tsx` implements a secure gate for the protected content leveraging Okta as an SSO provider. `..\src\nextjs\src\components\GatedContent.tsx` demonstrates an example of a protected content using the `GatedContentWrapper`.
 
+# Authentication with Okta
+The GatedContentWrapper ensures that only authenticated users via Okta can access some protected content / components. Its implementation is based on the NextAuth.js open-source authentication solution:
+1. `..\src\nextjs\.env.local` specifies the Environment Variables for Okta integration
+
+   TBC
+
 # License
 The Sitecore XM Cloud project is released under the MIT license what means that you can modify and use its code how you want even for commercial use.
