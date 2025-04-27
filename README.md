@@ -17,7 +17,8 @@ This component library helps to accelerate your XM Cloud development.
 ### Language Selector
 `..\src\nextjs\src\components\LanguageSelector.tsx` implements a Language Selector Next.js component.
 
-TBC
+### Gated Content
+`..\src\nextjs\src\components\GatedContentWrapper.tsx` implements a secure gate for the protected content leveraging Okta as an SSO provider. `..\src\nextjs\src\components\GatedContent.tsx` demonstrates an example of a protected content using the `GatedContentWrapper`.
 
 # License
 The Sitecore XM Cloud project is released under the MIT license what means that you can modify and use its code how you want even for commercial use.
