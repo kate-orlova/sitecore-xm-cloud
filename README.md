@@ -24,7 +24,7 @@ This component library helps to accelerate your XM Cloud development.
 The GatedContentWrapper ensures that only authenticated users via Okta can access some protected content / components. Its implementation is based on the [NextAuth.js](https://next-auth.js.org/getting-started/introduction) open-source authentication solution:
 1. `..\src\nextjs\.env.local` specifies the Environment Variables for Okta integration
 2. `..\src\nextjs\src\pages\api\auth\[...nextauth].ts` implements the NextAuth API route
-3. `..\src\nextjs\src\pages\_app.tsx`
+3. `..\src\nextjs\src\pages\_app.tsx` sets up the Auth Provider and makes the authentication session data available throughout the component tree
 
    
 
