@@ -25,6 +25,7 @@ The GatedContentWrapper ensures that only authenticated users via Okta can acces
 1. `..\src\nextjs\.env.local` specifies the Environment Variables for Okta integration
 2. `..\src\nextjs\src\pages\api\auth\[...nextauth].ts` implements the NextAuth API route
 3. `..\src\nextjs\src\pages\_app.tsx` sets up the Auth Provider and makes the authentication session data available throughout the component tree
+4. `..\src\nextjs\src\components\GatedContentWrapper.tsx` implements a secure wrapper functionality to protected access to the restricted content
 
    
 
