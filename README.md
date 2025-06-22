@@ -15,7 +15,7 @@ This component library helps to accelerate your XM Cloud development.
 
 ## Next.js
 ### Language Selector
-`..\src\nextjs\src\components\LanguageSelector.tsx` implements a Language Selector Next.js component.
+A **Language Selector** Next.js component retrieves all available languages through `router.locales`, uses `sitecoreContext` to determine the current language and handles language switching on the front-end. Its implementation can be found in `..\src\nextjs\src\components\LanguageSelector.tsx` file.
 
 ### Gated Content
 `..\src\nextjs\src\components\GatedContentWrapper.tsx` implements a secure gate for the protected content leveraging Okta as an SSO provider. `..\src\nextjs\src\components\GatedContent.tsx` demonstrates an example of a protected content using the `GatedContentWrapper`.
