@@ -17,6 +17,8 @@ This component library helps to accelerate your XM Cloud development.
 If you are utilising the [Next.js](https://nextjs.org/) framework for front-end implementation, this section will be beneficial as it covers a selection of ready-to-use Next.js components.
 
 ### Language Selector
+The Next.js framework offers built-in support for internationalisation and localisation ([i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization)) routing. To enable this functionality, you simply need to add the `i18n` configuration to your `next.config.js` file and define all the locales you intend to support within your Next.js application.
+
 A **Language Selector** Next.js component retrieves all available languages through `router.locales`, uses `sitecoreContext` to determine the current language and handles language switching on the front-end. Its implementation can be found in `..\src\nextjs\src\components\LanguageSelector.tsx` file.
 
 ### Gated Content
