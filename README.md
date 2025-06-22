@@ -14,6 +14,8 @@ This component library helps to accelerate your XM Cloud development.
 `..\src\sxa\src\components\Banner.tsx` implements a Banner JavaScript component.
 
 ## Next.js
+If you are utilising the [Next.js](https://nextjs.org/) framework for front-end implementation, this section will be beneficial as it covers a selection of ready-to-use Next.js components.
+
 ### Language Selector
 A **Language Selector** Next.js component retrieves all available languages through `router.locales`, uses `sitecoreContext` to determine the current language and handles language switching on the front-end. Its implementation can be found in `..\src\nextjs\src\components\LanguageSelector.tsx` file.
 
