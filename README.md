@@ -18,6 +18,18 @@ If you are utilising the [Next.js](https://nextjs.org/) framework for front-end 
 
 ### Language Selector
 The Next.js framework offers built-in support for internationalisation and localisation ([i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization)) routing. To enable this functionality, you simply need to add the `i18n` configuration to your `next.config.js` file and define all the locales you intend to support within your Next.js application.
+For example:
+```
+i18n: {
+    // These are all the locales you want to support in your application.
+    // These should generally match (or at least be a subset of) those in XM Cloud.
+    locales: ['en', 'en-gb', 'fr-fr', 'de-de', 'en-us', 'en-au', 'zh-cn', 'nl-be', 'fr-be'],
+
+    // This is the locale that will be used when visiting a non-locale
+    // prefixed path e.g. `/styleguide`.
+    defaultLocale: 'en-gb',	
+  }
+```
 
 A **Language Selector** Next.js component retrieves all available languages through `router.locales`, uses `sitecoreContext` to determine the current language and handles language switching on the front-end. Its implementation can be found in `..\src\nextjs\src\components\LanguageSelector.tsx` file.
 
