@@ -31,6 +31,8 @@ i18n: {
   }
 ```
 
+Sitecore JSS Next.js applications support internationalised routing with sub-path routing, while domain routing requires some custom implementation.
+
 A **Language Selector** Next.js component retrieves all available languages through `router.locales`, uses `sitecoreContext` to determine the current language and handles language switching on the front-end. Its implementation can be found in `..\src\nextjs\src\components\LanguageSelector.tsx` file.
 
 ### Gated Content
