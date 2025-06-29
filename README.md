@@ -33,7 +33,7 @@ i18n: {
 
 Sitecore JSS Next.js applications support internationalised routing with sub-path routing, while domain routing requires some custom implementation.
 
-To enable content localisation in a JSS Next.js app, import the _i18n_ provider from the _next-localization_ module and initialise it using the _pageProps.locale_ and _dictionary_ properties.
+To enable content localisation in a JSS Next.js app, import the _i18n_ provider from the _next-localization_ module and initialise it using the _pageProps.locale_ and _dictionary_ properties. See `..\src\pages\_app.tsx` for illustration.
 
 A **Language Selector** Next.js component retrieves all available languages through `router.locales`, uses `sitecoreContext` to determine the current language and handles language switching on the front-end. Its implementation can be found in `..\src\nextjs\src\components\LanguageSelector.tsx` file.
 
