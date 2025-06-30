@@ -38,15 +38,16 @@ To enable content localisation in a JSS Next.js app, import the _i18n_ provider 
 A **Language Selector** Next.js component retrieves all available languages through `router.locales`, uses `sitecoreContext` to determine the current language and handles language switching on the front-end. Its implementation can be found in `..\src\nextjs\src\components\LanguageSelector.tsx` file.
 
 ### Gated Content
-`..\src\nextjs\src\components\GatedContentWrapper.tsx` implements a secure gate for the protected content leveraging Okta as an SSO provider. `..\src\nextjs\src\components\GatedContent.tsx` demonstrates an example of a protected content using the `GatedContentWrapper`.
+`..\src\nextjs\src\components\GatedContentWrapper.tsx` component implements a secure gate for the protected content leveraging [Okta](https://www.okta.com/en-gb/products/single-sign-on-workforce-identity/) as an SSO provider.
 
-# Authentication with Okta
-The GatedContentWrapper ensures that only authenticated users via Okta can access some protected content / components. Its implementation is based on the [NextAuth.js](https://next-auth.js.org/getting-started/introduction) open-source authentication solution:
-1. `..\src\nextjs\.env.local` specifies the Environment Variables for Okta integration
-2. `..\src\nextjs\src\pages\api\auth\[...nextauth].ts` implements the NextAuth API route
-3. `..\src\nextjs\src\pages\_app.tsx` sets up the Auth Provider and makes the authentication session data available throughout the component tree
-4. `..\src\nextjs\src\components\GatedContentWrapper.tsx` implements a secure wrapper functionality to protected access to the restricted content
-5. `..\src\nextjs\src\components\GatedContent.tsx` implements a gated content component using the secure wrapper
+#### Authentication with Okta
+The `GatedContentWrapper` ensures that only authenticated users via Okta can access some protected content. Its implementation is based on the [NextAuth.js](https://next-auth.js.org/getting-started/introduction) open-source authentication solution:
+1. `..\src\nextjs\.env.local` specifies the Environment Variables for Okta integration;
+2. `..\src\nextjs\src\pages\api\auth\[...nextauth].ts` implements the NextAuth API route;
+3. `..\src\nextjs\src\pages\_app.tsx` sets up the Auth Provider and makes the authentication session data available throughout the component tree;
+4. `..\src\nextjs\src\components\GatedContentWrapper.tsx` component verifies whether a user is currently authenticated and ensures that the Okta session remains active; if the session is valid, the protected content contained within this wrapper is displayed, otherwise, the content is hidden and the user is redirected to the Okta portal for authentication.
+
+`..\src\nextjs\src\components\GatedContent.tsx` component demonstrates an example of a protected content using the `GatedContentWrapper` wrapper.
 
    
 
